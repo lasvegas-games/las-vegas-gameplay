@@ -1,0 +1,131 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-image: url("../assets/casino-mobile.png"); 
+      background-size: 100% 100%;
+      background-position: top center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: filter 0.3s ease;
+    }
+
+    .main-content {
+      text-align: center;
+      color: #fff;
+      display: none;
+    }
+
+    .main-content h1 {
+      font-size: 2rem;
+      font-family: "arial", sans-serif;
+      color: #f5d793;
+      text-shadow:-4px 5px 1px #5a1508;
+      margin-bottom: 2rem;
+    }
+
+    .main-content a {
+      display: inline-block;
+    }
+    .main-content a img{
+        width: 50px;
+    }
+    .main-content a img:hover{
+      filter: drop-shadow(
+       2px 2px 10px black);
+    }
+
+  
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .popup {
+      background-image: url("../assets/casino-popup.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #000;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup h2 {
+      margin-bottom: 1.5rem;
+      background-color: rgba(0, 0, 0, 0.518);
+      border-radius: 5px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+    }
+
+    .popup button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .popup button:first-of-type {
+      background-color: #9E1C60;
+      color: white;
+    }
+
+    .popup button:first-of-type:hover {
+      background-color: #9e1c5fad;
+    }
+
+    .popup button:last-of-type {
+      background-color: #F25912;
+      color: white;
+    }
+
+    .popup button:last-of-type:hover {
+      background-color: #c82333;
+    }
+
+    /* === RESPONSIVE === */
+    @media (min-width: 768px) {
+      body{
+        background-image:url("../assets/casinow.jpg");
+      }
+      .main-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .main-content a {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .main-content h1 {
+        font-size: 3rem;
+      }
+    }
